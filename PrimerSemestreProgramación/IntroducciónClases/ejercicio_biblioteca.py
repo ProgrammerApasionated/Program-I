@@ -58,7 +58,7 @@ class Biblioteca:
         for comprobar in self.libros:
             if comprobar.isbn == libro.isbn:
                 print ("El libro ya está en la biblioteca")
-                return
+                return 
         self.libros.append(libro)
         print (f"El libro {libro.nombre} se ha añadido. ")
 
