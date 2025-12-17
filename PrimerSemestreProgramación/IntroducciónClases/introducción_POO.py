@@ -106,10 +106,10 @@ def creacion_estudiantes():
 
 # EJEMPLOS DE USO #
 
-#Estudiante_prueba = Estudiante ("Alberto",[1,2,3,4,5],"Hombre")
-#print (Estudiante_prueba)
-#Estudiante_prueba.mostrar_notas()
-#Estudiante_prueba.cantidad_notas()
-#Estudiante_prueba.cambiar_algo()
-#nuevo = nuevo_estudiante()
-#nuevo.mostrar_informacion()
+Estudiante_prueba = Estudiante ("Alberto",[1,2,3,4,5],"Hombre")
+print (Estudiante_prueba)
+Estudiante_prueba.mostrar_notas()
+Estudiante_prueba.cantidad_notas()
+Estudiante_prueba.cambiar_algo()
+nuevo = nuevo_estudiante()
+nuevo.mostrar_informacion()

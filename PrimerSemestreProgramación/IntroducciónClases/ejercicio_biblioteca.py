@@ -220,6 +220,14 @@ def menu():
 
 
 biblioteca = Biblioteca()
+# Ejemplos de libros
+libro1 = Libro("Cien Años de Soledad", "1234567", "Gabriel García Márquez", False, "Novela")
+libro2 = Libro("Python para Todos", "2345678", "Raúl González", False, "Programación")
+libro3 = Libro("Historia del Arte", "3456789", "John Smith", True, "Arte")
 
+# Añadimos libros a la biblioteca
+biblioteca.meter_libros(libro1)
+biblioteca.meter_libros(libro2)
+biblioteca.meter_libros(libro3)
 while menu():
     continue
