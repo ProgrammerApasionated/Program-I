@@ -22,4 +22,4 @@ Of course, I want good grades, but more importantly, I want to build real projec
 
 All these experiences taught me resilience and curiosity, which I now apply to programming projects.
 
-# This repository is not about having the best code, but about documenting my journey to finish college and my growth as a student. 
+# This repository is not about having the best code, but about documenting my journey and my growth as a student. 
