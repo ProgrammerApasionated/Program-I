@@ -1,0 +1,10 @@
+# Nombre [Actividad -> Valor] Temporada Nivel
+Carlos ["Basket -> 18", "Gym -> 7.5", "Running -> 5.2"] 2024 Avanzado
+Lucia ["Yoga -> 8", "Running -> 6.1"] 2024 Medio
+Mario ["Futbol -> 12", "Gym -> 8", "Swimming -> 4.3"] 2023 Avanzado
+Elena ["Running -> 7", "Yoga -> 9.2", "Pilates -> 8.5"] 2024 Medio
+David ["Gym -> 9", "Basket -> 14"] 2023 Principiante
+Elena ["Basket -> 10", "Futbol -> 13"] 2022 Avanzado
+Azul ["Futbol -> 10.0", "Basket -> 2.0"] 2023 Medio
+Verde ["Yoga -> 10.0", "Pilates -> 4.0"] 2023 Medio
+Alvaro ["Basket -> 13.0", "Futbol -> 2.0"] 2023 Medio
