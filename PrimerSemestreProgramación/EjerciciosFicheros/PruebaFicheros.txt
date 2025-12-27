@@ -1,0 +1,12 @@
+#Prueba para ejercicios varios de ficheros.
+#Base de datos de estudiantes con asignaturas y notas.
+AzulVerdez ["Mates -> 9.2", "Lengua -> 6.5", "Ingles -> 7.0", "Historia -> 5.8"] PrimerSemestre 1Eso
+MartinezMoradez ["Mates -> 5.0", "Lengua -> 4.5", "Ingles -> 6.0", "Naturales -> 3.2"] SegundoSemestre 3Eso
+LopezGarcia ["Mates -> 7.8", "Lengua -> 6.9", "Ingles -> 8.2", "Fisica -> 7.1"] PrimerSemestre 2Eso
+FernandezRuiz ["Mates -> 4.2", "Lengua -> 5.0", "Ingles -> 6.1", "Naturales -> 4.8"] SegundoSemestre 1Eso
+SanchezPerez ["Mates -> 9.5", "Lengua -> 8.7", "Ingles -> 9.0", "Fisica -> 8.9"] PrimerSemestre 4Eso
+GomezAlonso ["Mates -> 6.0", "Lengua -> 6.3", "Ingles -> 5.9", "Historia -> 6.5"] SegundoSemestre 3Eso
+TorresNavarro ["Mates -> 3.8", "Lengua -> 4.9", "Ingles -> 5.2", "Naturales -> 4.5"] PrimerSemestre 2Eso
+RamirezOrtega ["Mates -> 8.1", "Lengua -> 7.4", "Ingles -> 8.6", "Fisica -> 7.9"] SegundoSemestre 4Eso
+DiazClemente ["Mates -> 5.5", "Lengua -> 6.0", "Ingles -> 6.2", "Naturales -> 5.8"] PrimerSemestre 1Eso
+HernandezVidal ["Mates -> 9.8", "Lengua -> 9.1", "Ingles -> 9.4", "Fisica -> 9.6"] SegundoSemestre 3Eso
