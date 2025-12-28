@@ -12,9 +12,11 @@ class Establecimiento:
         self.operaciones = 0
 
     def añadir_venta(self, importe):
+        # Añadimos al total el importe y sumamos una operación.
         self.total_ventas += importe
         self.operaciones += 1
 def cargar_establecimientos(nombre_fichero):
+    # Leemos la information del fichero y añadimos la venta si tiene.
     lista_establecimientos = []
     fichero = open(nombre_fichero)
     for linea in fichero:
@@ -33,6 +35,7 @@ def cargar_establecimientos(nombre_fichero):
     fichero.close()
     return lista_establecimientos
 def establecimientos_con_muchas_ventas(lista_est, localidad, minimo):
+    # Si un establecimiento de una ciudad x cumple los mínimos de ventas (cantidad importe) se añade a la lista de resultados)
     resultado = []
     for est in lista_est:
         if est.localidad == localidad and est.total_ventas >= minimo:

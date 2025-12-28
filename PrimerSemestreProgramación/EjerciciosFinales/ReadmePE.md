@@ -13,11 +13,11 @@ A directory that has all the exercises with the documentations that I will have 
 - **Part 2**: Still struggling with file‑based data processing.
 
 ### FUTURE IMPROVEMENT :
-- Become more comfortable with the format of the exam and understand exactly what is expected.  
-- Practise more under exam-like time conditions.  
-- Learn how to comment code more effectively and consistently.
-- Work with harder file‑handling exercises.
-- Learn how to visualize data (e.g., analyzing school marks to detect performance patterns).
+- Become more comfortable with the format of the exam and understand exactly what is expected  -> Working on it (50%)
+- Practise more under exam-like time conditions.  -> Dealing with it (40%)
+- Learn how to comment code more effectively and consistently.   -> Getting more used to it (60%)
+- Work with harder file‑handling exercises.    -> Examples on `EjerciciosFicheros` (40%)
+- Learn how to visualize data (e.g., analyzing school marks to detect performance patterns).   -> Reading documentation on it (10%, just started)
 
 ### Strategies and progress :
 - I'm trying to get used to reading data that is on a text file.
