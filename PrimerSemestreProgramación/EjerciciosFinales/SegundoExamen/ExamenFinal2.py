@@ -84,7 +84,9 @@ class Deporte:
     def __init__(self, nombre):
         self.nombre = nombre
         self.estudiantes = []
+
 def crear_lista_deportes(nombre_fichero, grado):
+    # Abrimos el fichero, sacamos las variables que nos interesan, recorremos la lista de deportes y sacamos la modalidad.
     lista_deportes = []
     with open(nombre_fichero, "r") as fichero:
         for linea in fichero:
@@ -103,3 +105,25 @@ def crear_lista_deportes(nombre_fichero, grado):
             dep_obj.estudiantes.append(dni)
     return lista_deportes
 
+def modalidad_mas_representada(lista_deportes):
+    # Recorremos la lista de un deporte en concreto y los practicantes, posteriormente comparamos la cantidad con el máximo.
+    max_estudiantes = -1
+    modalidad_max = None
+    for deporte in lista_deportes:
+        cantidad = len(deporte.estudiantes)
+        if cantidad > max_estudiantes:
+            max_estudiantes = cantidad
+            modalidad_max = deporte.nombre
+    return modalidad_max
+
+def hay_representantes(lista_deportistas, lista_modalidades):
+    # Buscamos el nombre del deporte y si hay algún valor en la lista de deportistas que coinincida con este deporte.
+    for modalidad in lista_modalidades:
+        encontrada = False
+        for deporte in lista_deportistas:
+            if deporte.nombre == modalidad and len(deporte.estudiantes) > 0:
+                encontrada = True
+                break
+        if not encontrada:
+            return False
+    return True
