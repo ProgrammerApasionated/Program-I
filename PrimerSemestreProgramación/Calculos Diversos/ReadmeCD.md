@@ -1,4 +1,4 @@
-# Practise for Programming I Finals.
+# Practice for Programming I Finals.
 A directory that has some exercises regarding core concepts from Python.
 
 ## Current content:

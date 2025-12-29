@@ -8,7 +8,7 @@ A directory that has all the exercises with the documentations that I will have 
 - **Part 2**: File handling — reading a text file, extracting information, and evaluating conditions. This part was more challenging.
 
 ### ExamenFinal2.py :
-- Second examen I revise with, I found interesting how working with different problems regarding some basics concepts can have such variety.
+- The second exam I revise with, I found interesting how working with different problems regarding some basic concepts can have such variety.
 - **Part 1**: Manageable.
 - **Part 2**: Still struggling with file‑based data processing.
 
@@ -26,4 +26,4 @@ A directory that has all the exercises with the documentations that I will have 
 ### Examen strategy :
 - After completing two exams, I noticed a clear pattern in the evaluation:
 - Arrays/List  -> First exercise   File text  -> Second exercise.
-- I currently (28/12/2025) find the first exercise very confortable , but I find sometimes hard getting used to know how to iterate the variables that I work with. 
+- I currently (28/12/2025) find the first exercise very confortable , but I sometimes find it hard getting used to know how to iterate the variables that I work with. 

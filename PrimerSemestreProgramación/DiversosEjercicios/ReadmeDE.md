@@ -24,6 +24,6 @@ A continuation of `Calculos Diversos` but with more variety of exercises.
 - Extend these concepts with more complex problems.
 
 ### What I learned with these projects :
-- I was creating these files with the idea of practising for my second exam of this subject. When I finished all I enjoyed programming as I did when I started.
+- I was creating these files with the idea of practising for my second exam of this subject. When I finished everything I enjoyed programming as I did when I started.
 - I practiced and internalized the streak algorithms, which I initially found confusing.
 - I learned how to use basic indexing with arrays, some practical programs, and basic programming logic.
