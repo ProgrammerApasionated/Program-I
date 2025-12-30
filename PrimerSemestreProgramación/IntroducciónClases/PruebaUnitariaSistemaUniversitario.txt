@@ -1,0 +1,21 @@
+
+# Creamos un sistema.
+sistema = SistemaCompleto()
+# Ejemplos de uso de estudiantes.
+estudiante1 = Estudiante("Azul Verdez", [8, 7, 9], "Masculino")
+estudiante2 = Estudiante("Medana Rojo", [10, 9, 8], "Femenino")
+estudiante3 = Estudiante("Perez Dientes", [6, 7, 5], "Masculino")
+# Añadimos los estudiantes en el Grupo Estudiantes.
+sistema.grupo_estudiantes.añadir_estudiante(estudiante1)
+sistema.grupo_estudiantes.añadir_estudiante(estudiante2)
+sistema.grupo_estudiantes.añadir_estudiante(estudiante3)
+# Ejemplos de uso de asignaturas.
+asignatura1 = Asignaturas("Algebra Lineal", "Lunes 10:00-12:00", "Santiago Joker")
+asignatura2 = Asignaturas("Informática Básica", "Martes 09:00-11:00", "Azulez Moradez")
+asignatura3 = Asignaturas("Oratoria y Debate", "Miércoles 12:00-14:00", "Debate Interesantez")
+# Añadimos las asignaturas en el Grupo Asignaturas.
+sistema.grupo_asignaturas.añadir_asignaturas(asignatura1)
+sistema.grupo_asignaturas.añadir_asignaturas(asignatura2)
+sistema.grupo_asignaturas.añadir_asignaturas(asignatura3)
+# Iniciamos el programa con el menú.
+sistema.menu()

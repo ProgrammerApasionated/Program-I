@@ -1,0 +1,2 @@
+Estudiante: Azul | Notas: [1, 2, 3] | Media: 2.00 | Racha: 0 | Tipo: Suspenso
+Estudiante: Carlos | Notas: [7, 8, 4] | Media: 6.33 | Racha: 2 | Tipo: Bueno
