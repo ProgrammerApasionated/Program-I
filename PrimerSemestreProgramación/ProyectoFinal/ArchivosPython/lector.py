@@ -48,4 +48,4 @@ def añadir_dia_fichero(nombre_fichero):
     print("\n✔ Día añadido correctamente al fichero.\n")
     return dia
 
-leer_fichero("Datos.txt")
+leer_fichero("DatosPropiosReales.txt")

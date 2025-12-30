@@ -3,7 +3,7 @@ from lector import leer_fichero
 from informe import generar_informe
 
 def main():
-    lista_dias = leer_fichero("Datos.txt")
+    lista_dias = leer_fichero("DatosPropiosReales.txt")
     informe = generar_informe(lista_dias)
     print(informe)
 
