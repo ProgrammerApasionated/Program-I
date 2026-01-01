@@ -1,3 +1,6 @@
+# Ejercicio de práctica de POO.
+# Ejemplo de un caso real, simulación del funcionamiento de una biblioteca.
+
 class Libro:
     def __init__(self,nombre,isbn,autor,estado,genero):
         self.nombre   = nombre
@@ -18,7 +21,6 @@ class Libro:
         else:
             print ("Estado -> No Prestado.")
         print (f"Género  -> {self.genero}.")
-        print("-" * 40)
 
 
     def mostrar_estado(self):
@@ -70,7 +72,6 @@ class Biblioteca:
         else:
             for libro in self.libros:
                 print (libro)
-                print("-" * 40)
 
 
     def libro_nuevo(self):
@@ -101,7 +102,6 @@ class Biblioteca:
             for ejemplar in self.libros:
                 if not ejemplar.estado:
                     ejemplar.mostrar_datos()
-                    print ("-" * 40)
     def prestar_por_isbn(self):
         isbn = input ("Introduce el isbn del libro. (7 dígitos) \n")
         encontrado = False
@@ -133,9 +133,9 @@ class Biblioteca:
         opcion = opcion.upper()
         encontrado = False
         if opcion == "N" :
-            nom = input ("Introduce el nombre del libro. \n")
+            nom = input ("Introduce el nombre del libro : \n")
             while nom == "":
-                nom = input ("Introduce el nombre correcto.")
+                nom = input ("Introduce el nombre correcto : \n")
             for ejemplar in self.libros:
                 if ejemplar.nombre.lower() == nom.lower():
                     print ("El libro es : ")
@@ -143,11 +143,11 @@ class Biblioteca:
                     encontrado = True
                     break
             if not encontrado:
-                print (f"El libro con {nom} como título no se ha encontrado")
+                print (f"El libro con {nom} como título no se ha encontrado. ")
         elif opcion == "I":
             isbn = input ("Introduce el isbn del libro. (7 dígitos) \n")
             while len(isbn) != 7:
-                isbn = input ("Introduce el isbn correctamente. (7 dígitos) ")
+                isbn = input ("Introduce el isbn correctamente. (7 dígitos) \n")
             for ejemplar in self.libros:
                 if ejemplar.isbn == isbn:
                     print ("El libro es : ")
@@ -157,9 +157,9 @@ class Biblioteca:
             if not encontrado:
                 print (f"No se ha encontrado libro con {isbn} como ISBN. ")
         elif opcion == "A" :
-            aut = input ("Introduce el autor del libro. \n")
+            aut = input ("Introduce el autor del libro : \n")
             while aut == "":
-                aut = input ("Autor incorrecto. ")
+                aut = input ("Autor incorrecto. \n")
             for ejemplar in self.libros:
                 if ejemplar.autor == aut:
                     print ("El libro es : ")
@@ -169,10 +169,12 @@ class Biblioteca:
             if not encontrado:
                 print (f"No se ha encontrado libro con {aut} como autor. ")
         else:
-            print ("Opción incorrecta. \n")
+            print ("Opción incorrecta. ")
+# Separados 100% estético, estilo própio.
+def sep():
+    print ("-" * 40)
 
 def menu():
-    print ("-" * 30)
     print("1.-Crear un ejemplar y meterlo en la biblioteca : ")
     print("2.-Mostrar libros disponibles : ")
     print("3.-Buscar libro en la biblioteca: ")
@@ -180,7 +182,7 @@ def menu():
     print("5.-Mostrar libros de la biblioteca: ")
     print("6.-Devolver libro por su ISBN. ")
     print ("7.-Salir. ")
-    print ("-" * 30)
+    sep()
     while True:
         opcion = input("Introduce la opción interesada: \n")
         if opcion.isdigit() and 1 <= int(opcion) <= 7:
@@ -188,34 +190,48 @@ def menu():
             break
         print("Introduce un número válido entre 1 y 7.")
     if opcion == 1:
+        sep()
         print("Has elegido crear un ejemplar. \n")
         nuevo_libro = biblioteca.libro_nuevo()
         biblioteca.meter_libros(nuevo_libro)
         print("El nuevo libro se ha añadido en la biblioteca. \n")
+        sep()
         return True
     elif opcion == 2:
+        sep()
         print("Has elegido la opción 2. \n")
         biblioteca.mostrar_libros_disponibles()
+        sep()
         return True
     elif opcion == 3:
+        sep()
         print("Has elegido la opción 3. \n")
         biblioteca.buscar_libro()
+        sep()
         return True
     elif opcion == 4:
+        sep()
         print("Has elegido la opción 4. \n")
         biblioteca.prestar_por_isbn()
+        sep()
         return True
     elif opcion == 5:
+        sep()
         print("Has elegido la opción 5. \n")
         biblioteca.mostrar_libros()
         print("Estos son los libros que están actualmente en la biblioteca. \n")
+        sep()
         return True
     elif opcion == 6:
+        sep()
         print ("Has elegido la opción 6. \n")
         biblioteca.devolver_por_isbn()
+        sep()
         return True
     else:
-        print ("Bye Bye. \n")
+        sep()
+        print ("Bye Bye. ")
+        sep()
         return False
 
 

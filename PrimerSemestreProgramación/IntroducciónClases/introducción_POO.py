@@ -1,3 +1,6 @@
+# Primera prueba del parádigma de programación orientada a objetos.
+# Ejemplo sencillo de un sistema universitario, posteriormente se elaborará este sistema de forma más completa.
+
 class Estudiante:
 
     def __init__ (self,nombre,notas,genero):
@@ -8,13 +11,12 @@ class Estudiante:
     def __str__ (self):
         return f"El nombre es {self.nombre}, sus nota/s son {self.notas} y su género es {self.genero} \n"
 
-
     def mostrar_informacion(self):
         print (f"Nombre -> {self.nombre}")
         print (f"Notas -> ", end="")
         for nota in self.notas:
             print (nota, end= " ")
-        print (f"\nGénero -> {self.genero}")
+        print (f"Género -> {self.genero}")
 
     def mostrar_notas(self):
         i = 1  # Número de la nota
@@ -28,7 +30,7 @@ class Estudiante:
         for nota in self.notas:
             media += nota
         media = media / len(self.notas)
-        print (f"La media del estudiante {self.nombre} tiene una media de {media} puntos")
+        print (f"La media del estudiante {self.nombre} tiene una media de {media} puntos. ")
 
     def nota_pico(self):
         nota_max = self.notas[0]
@@ -38,7 +40,7 @@ class Estudiante:
                 nota_max = nota
             elif nota < nota_min:
                 nota_min = nota
-        print (f"El estudiante {self.nombre} tiene un máximo de {nota_max} y un mínimo de {nota_min}")
+        print (f"El estudiante {self.nombre} tiene un máximo de {nota_max} y un mínimo de {nota_min}. ")
 
     def cantidad_notas(self):
         cant_suspensos      = 0
@@ -57,14 +59,14 @@ class Estudiante:
                 cant_notables += 1
             else:
                 cant_sobresalientes += 1
-        print (f"El estudiante {self.nombre} tiene {cant_suspensos} suspensos, {cant_suficientes} suficientes, {cant_bienes} bienes, {cant_notables} notables y {cant_sobresalientes} sobresalientes. \n")
+        print (f"El estudiante {self.nombre} tiene {cant_suspensos} suspensos, {cant_suficientes} suficientes, {cant_bienes} bienes, {cant_notables} notables y {cant_sobresalientes} sobresalientes. ")
 
     def cambiar_algo(self):
         opcion = input ("Quieres cambiar algún dato? (S/N) ")
         if opcion == "S":
             cambio = input ("Que quieres cambiar? (N = Nombre, NN = Notas y G = Genero. \n")
             if cambio == "N":
-                nombre = input ("Introduce el nombre del estudiante cambiado. \n")
+                nombre = input ("Introduce el nombre del estudiante cambiado : \n")
                 while nombre == "" :
                     nombre = input ("Nombre incorrecto, cambia el nombre. \n")
                 self.nombre = nombre
@@ -78,20 +80,20 @@ class Estudiante:
                     lista_notas.append(notas)
                     notas = int (input ("Introduce notas válidas, de 10-0 o no para acabar. \n"))
                 self.notas = lista_notas
-                print (f"Las notas se han cambiado a {self.notas}")
+                print (f"Las notas se han cambiado a {self.notas}. ")
             elif cambio == "G":
                 genero = input ("Introduce el genero del estudiante, (Hombre/Mujer). \n")
                 while not (genero == "Hombre" or genero =="Mujer"):
                     genero = input ("Género incorrecto, cambia el género (Hombre/Mujer). \n")
                 self.genero = genero
-                print (f"El género se ha cambiado a {self.genero}")
+                print (f"El género se ha cambiado a {self.genero}. ")
         else:
-            print ("No ha cambiado nada del estudiante. \n")
+            print ("No ha cambiado nada del estudiante. ")
 
 def creacion_estudiantes():
-    nombre = input ("Introduce el nombre del nuevo estudiante. \n")
+    nombre = input ("Introduce el nombre del nuevo estudiante : \n")
     while nombre == "":
-        nombre = input ("Nombre incorrecto, introduce el nombre \n")
+        nombre = input ("Nombre incorrecto, introduce el nombre : \n")
     notas = int(input("Introduce notas válidas, de 10-0. \n"))
     lista_notas = []
     while notas < 0 or notas > 10:

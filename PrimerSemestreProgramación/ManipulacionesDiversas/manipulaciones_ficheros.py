@@ -15,6 +15,7 @@ class Establecimiento:
         # Añadimos al total el importe y sumamos una operación.
         self.total_ventas += importe
         self.operaciones += 1
+
 def cargar_establecimientos(nombre_fichero):
     # Leemos la information del fichero y añadimos la venta si tiene.
     lista_establecimientos = []
@@ -34,6 +35,7 @@ def cargar_establecimientos(nombre_fichero):
             lista_establecimientos.append(nuevo_est)
     fichero.close()
     return lista_establecimientos
+
 def establecimientos_con_muchas_ventas(lista_est, localidad, minimo):
     # Si un establecimiento de una ciudad x cumple los mínimos de ventas (cantidad importe) se añade a la lista de resultados)
     resultado = []

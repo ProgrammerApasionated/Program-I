@@ -1,3 +1,5 @@
+# Ejercicio similar al de introducción_POO.py pero con un diseño más complejo.
+
 class Asignaturas:
     def __init__(self,nombre,horario,profesor):
         self.nombre   = nombre
@@ -12,7 +14,6 @@ class Asignaturas:
         print ("h/H para Horario.")
         print ("p/P para Profesor.")
 
-
     def mostrar_info_concreta(self):
         self.posibilidades_asignaturas()
         opc = input ("Introduce la opción que quieres que se muestre. \n")
@@ -22,11 +23,11 @@ class Asignaturas:
             opc = input ("Introduce una opción válida. \n")
         opc = opc.lower()
         if opc == "n":
-            print (f"El nombre de la asignatura es {self.nombre}. \n")
+            print (f"El nombre de la asignatura es {self.nombre}. ")
         elif opc == "h":
-            print (f"Los horarios de la asignatura {self.nombre} son {self.horario}. \n")
+            print (f"Los horarios de la asignatura {self.nombre} son {self.horario}. ")
         else:
-            print (f"El nombre del profesor que da la asignatura {self.nombre} es {self.profesor}. \n")
+            print (f"El nombre del profesor que da la asignatura {self.nombre} es {self.profesor}. ")
 
     def cambiar_info_concreta(self):
         self.posibilidades_asignaturas()
@@ -61,10 +62,13 @@ class Estudiante:
         self.nombre = nombre
         self.notas = notas
         self.genero = genero
+
     def __str__(self):
         return f"Tiene nombre {self.nombre}, estas notas {self.notas} y genero {self.genero}"
+
     def media(self):
         return sum(self.notas) / len(self.notas)
+
     def racha_aprobados(self):
         racha = 0
         max_racha = 0
@@ -75,6 +79,7 @@ class Estudiante:
             else:
                 racha = 0
         return max_racha
+
     def tipo(self):
         m = self.media()
         r = self.racha_aprobados()
@@ -101,10 +106,10 @@ class GrupoEstudiantes:
         print("N/n   -> Nombre")
         print("No/no  -> Notas")
         print("G/g   -> Género")
-        buscar = input("Introduce característica a buscar: ")
+        buscar = input("Introduce característica a buscar : \n")
         buscar = buscar.lower()
         while buscar not in ["n", "no", "g"]:
-            buscar = input("Introduce una opción válida (n,no,g) \n")
+            buscar = input("Introduce una opción válida. (n,no,g) \n")
         encontrado = False
         if buscar == "n":
             nombre = input("Introduce el nombre del estudiante: ")
@@ -115,10 +120,10 @@ class GrupoEstudiantes:
                     encontrado = True
         elif buscar == "no":
             notas = []
-            nota = input("Introduce notas una a una (otra cosa para terminar): ")
+            nota = input("Introduce notas una a una. (nota negativa o mayor a 10 para terminar) \n")
             while nota.isdigit() and 0 <= int(nota) <= 10:
                 notas.append(int(nota))
-                nota = input("Introduce otra nota (o algo distinto para terminar): ")
+                nota = input("Introduce otra nota : (o algo distinto para terminar)  \n")
             for estudiante in self.estudiantes:
                 if estudiante.notas == notas:
                     print(estudiante)
@@ -132,7 +137,7 @@ class GrupoEstudiantes:
                     print(estudiante)
                     encontrado = True
         if not encontrado:
-            print("No se ha encontrado ningún estudiante.")
+            print("No se ha encontrado ningún estudiante. ")
 
 class GrupoAsignaturas:
     def __init__(self):
@@ -149,7 +154,7 @@ class GrupoAsignaturas:
         if 1 <= index <= len(self.asignaturas):
             self.asignaturas[index - 1].cambiar_info_concreta()
         else:
-            print ("Indice no válido.")
+            print ("Indice no válido. ")
 
 class SistemaCompleto:
     def __init__(self):
@@ -178,19 +183,18 @@ class SistemaCompleto:
                 print(f"Tipo de estudiante: {est.tipo()}")
                 print("-" * 40)
                 return
-        print("Estudiante no encontrado.")
+        print("Estudiante no encontrado. ")
 
     def guardar_info_completa(self):
-        nombre = input("Introduce el nombre del estudiante: ")
+        nombre = input("Introduce el nombre del estudiante : \n")
         for est in self.grupo_estudiantes.estudiantes:
             if est.nombre.lower() == nombre.lower():
                 self.guardar_info_estudiante(est)
                 return
-        print("Estudiante no encontrado.")
+        print("Estudiante no encontrado. ")
 
     def menu(self):
         while True:
-            linea()
             print("-------- MENÚ SISTEMA --------")
             print("1.-Añadir estudiante.")
             print("2.-Mostrar estudiantes.")
@@ -236,20 +240,21 @@ class SistemaCompleto:
                 self.guardar_info_completa()
                 linea()
             elif opcion == "9":
+                linea()
                 print("Bye Bye...")
                 linea()
                 break
             else :
-                print ("Opción inválida, introduce un número entre 1 y 9.")
+                print ("Opción inválida, introduce un número entre 1 y 9. ")
     def añadir_estudiante(self):
         nombre = input ("Introduce el nombre del estudiante. \n")
         while nombre == "":
-            nombre = input ("Introduce un nombre válido. ")
+            nombre = input ("Introduce un nombre válido. \n")
         notas = []
-        nota = input ("Introduce cada nota del estudiante. ")
+        nota = input ("Introduce cada nota del estudiante : \n")
         while 0 <= int (nota) <= 10:
             notas.append(int(nota))
-            nota = input ("Introduce cada nota del estudiante. ")
+            nota = input ("Introduce cada nota del estudiante : \n")
         genero = input ("Introduce el género del estudiante. (Femenino, Masculino) ")
         while genero not in ["Femenino","Masculino"]:
             genero = input ("Introduce un género válido. ")
@@ -260,11 +265,11 @@ class SistemaCompleto:
     def añadir_asignatura(self):
         nombre = input ("Introduce el nombre de la asignatura. \n")
         while nombre == "":
-            nombre = input ("Introduce un nombre válido.")
+            nombre = input ("Introduce un nombre válido. \n")
         horario = input ("Introduce un horario válido. \n")
         while horario == "":
             horario = input ("Introduce un horario válido. ")
-        profesor = input (f"Introduce el nombre del profesor de la asignatura {nombre}")
+        profesor = input (f"Introduce el nombre del profesor de la asignatura [{nombre}] : \n")
         while profesor == "":
             profesor = input ("Introduce un profesor válido. ")
         asignatura_nueva = Asignaturas (nombre,horario,profesor)
@@ -272,7 +277,7 @@ class SistemaCompleto:
 
     def modificar_asignatura(self):
         self.grupo_asignaturas.mostrar_info()
-        index = int(input("Introduce el número de la asignatura que quieres modificar"))
+        index = int(input("Introduce el número de la asignatura que quieres modificar : \n"))
         self.grupo_asignaturas.cambiar_algo(index)
 
 def guardar_en_fichero(nombre_fichero, texto):

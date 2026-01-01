@@ -1,9 +1,10 @@
 # Ejercicio de práctica con diccionarios.
 # Buscamos que el usuario diga los valores que quiera introducir y el valor que está ligado a él.
+
 def conseguir_dict():
     mi_diccionario = {}
-    clave = input ("Introduce la clave \n ")
-    valor = input ("Introduce el valor que tiene la clave \n")
+    clave = input ("Introduce la clave : \n ")
+    valor = input ("Introduce el valor que tiene la clave : \n")
     while clave != "" and valor != "":
         if valor.isdigit():
             valor = int(valor)
@@ -16,10 +17,11 @@ def conseguir_dict():
             mi_diccionario[clave].append(valor)
         else:
             mi_diccionario[clave] = [valor]
-        clave = input("Introduce la clave \n ")
-        valor = input("Introduce el valor que tiene la clave \n")
+        clave = input("Introduce la clave : \n ")
+        valor = input("Introduce el valor que tiene la clave : \n")
     return mi_diccionario
 # Obtenemos el diccionario sin sobreescribir un valor, pero añadiendo la clave aunque esté repetida.
+
 def valores_extremos(diccionario):
     if not diccionario:
         print("No hay valores")
@@ -39,6 +41,7 @@ def valores_extremos(diccionario):
     print(f"Valor máximo: {max_val} (clave: {clave_max})")
     print(f"Valor mínimo: {min_val} (clave: {clave_min})")
 # Mediante el diccionario sacamos el valor máximo o mínimo y enseñando su clave.
+
 def mostrar_dict(el_diccionario):
     if not el_diccionario:
         print("El diccionario está vacío")
@@ -58,5 +61,6 @@ def sacar_media (un_dict, clave):
     media = sum(valores)/ len(valores)
     media = round(media,2)
     print (f"La media de la clave {clave} es {media}")
+
 # Sacamos la media con una clave concreta, si no está salta un error.
 sacar_media(conseguir_dict(),"Azul")

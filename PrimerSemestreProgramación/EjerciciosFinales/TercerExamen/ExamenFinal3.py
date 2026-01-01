@@ -24,6 +24,7 @@ def produccion_diaria(matriz_prod):
                 print (f"El dia {dia} ha tenido una producción total de {total_dia}")
                 lista_totales.append(total_dia)
     return lista_totales
+
 def peor_día(matr_prod):
     # Queremos calcular usando la función anterior el mínimo de los valores dentro de la lista (En caso de empate elegimos el último(poner el = en la condición)).
     lista = produccion_diaria(matriz)
@@ -33,6 +34,7 @@ def peor_día(matr_prod):
             peor = i
     print (f"De la lista de totales {lista} el peor día ha sido el {peor}")
     return peor
+
 def defectuoso(matriz,num_panel,a):
     # Queremos calcular usando una función anterior una racha de días donde un panel concreto (una fila) cumple una racha de no cumplir un umbral concreto "a".
     dias = len(matriz[0])
@@ -120,7 +122,7 @@ def centro_con_mas_incidencia(lista, enfermedad):
 
 
 # Ejemplos de uso
-#produccion_diaria(produccion)
-#peor_día(produccion)
-#defectuoso(produccion,3,4)
-#panel_mas_rentable(produccion)
+produccion_diaria(produccion)
+peor_día(produccion)
+defectuoso(produccion,3,4)
+panel_mas_rentable(produccion)

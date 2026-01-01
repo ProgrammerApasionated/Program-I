@@ -1,3 +1,4 @@
+# Esta parte genera el informe con parte de las funciones definidas en los otros módulos.
 from estadisticas import *
 from rachas import *
 

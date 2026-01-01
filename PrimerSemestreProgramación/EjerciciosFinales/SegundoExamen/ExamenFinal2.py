@@ -90,6 +90,8 @@ def crear_lista_deportes(nombre_fichero, grado):
     lista_deportes = []
     with open(nombre_fichero, "r") as fichero:
         for linea in fichero:
+            # O también:
+            # dni, modalidad, carrera = linea.strip().split("#")
             linea = linea.strip()
             dni, modalidad, carrera = linea.split("#")
             if carrera != grado:

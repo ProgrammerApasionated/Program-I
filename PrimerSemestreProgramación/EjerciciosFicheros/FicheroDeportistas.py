@@ -1,5 +1,6 @@
 # Ejercicio orientado a leer los datos de Datos.txt
 # Datos con el siguiente formato -> Nombre [Actividad -> Valor] Temporada Nivel
+
 class Deportista:
     def __init__(self,nombre,actividad,temporada,nivel):
         self.nombre     = nombre
@@ -17,12 +18,13 @@ def obtener_datos(nombre_fichero):
             linea = linea.strip()
             if not linea or linea[0] == "#":
                 continue
+            # Formato de  : Nombre [Actividad -> Valor] Temporada Nivel
             nombre, resto = linea.split(" ", 1)
             inicio = resto.find("[")
             fin = resto.find("]") + 1
             actividad = resto[inicio:fin]
             despues = resto[fin:].strip()
-            temporada, nivel = despues.rsplit(" ", 1)  # separar desde el final
+            temporada, nivel = despues.rsplit(" ", 1)
             lista_deportistas.append(Deportista(nombre, actividad, temporada, nivel))
     return lista_deportistas
 
@@ -56,7 +58,7 @@ def niveles_altos(lista):
         for deporte, nivel in dic.items():
             if deporte not in altos or nivel > altos[deporte]:
                 altos[deporte] = nivel
-    print("Deportes con los niveles más altos:")
+    print("Deportes con los niveles más altos: ")
     for dep, nivel in altos.items():
         print(f" - {dep}: {nivel}")
     return altos
