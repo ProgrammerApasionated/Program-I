@@ -1,28 +1,5 @@
-# obtener_lista_temperaturas()   ->     Obtiene una lista a partir de una cadena del usuario.
-
-# Inicializa una lista con las temperaturas y pide las temperaturas, que posteriormente añade en la lista.
-
-# eliminar_un_elemento()        ->      Mediante una lista de temperaturas borra un elemento.
-
-# Pide un valor en pantalla, que si está en la lista pide confirmación y lo borra.
-# Mediante un uso de un bucle while, se recorre la cadena buscando dicho elemento.
-
-# media_temperaturas()          ->       Con una lista de temperaturas saca la media
-
-# Inicializando una variable con la suma total de elementos posteriormente se recorre la lista y se obtiene la media.
-
-# minima/maxima_temperatura()    ->      Calcula la máxima o mínima temperatura de una lista de temperaturas.
-
-# Suponemos que el primer elemento es el máximo/mínimo y luego lo comparamos con todos los elementos de la lista.
-# Con el elemento máximo/mínimo luego se devuelve.
-
-# racha_de_ola_de_frio()        ->         Mediante una lista de temperaturas determina la cantidad de rachas de días que hacía temperatura negativa.
-
-# Inicializamos las variables con las que trabajamos y mediante una estructura while comprobamos la condición.
-# Posteriormente cambiamos las referencias de las variables y para asegurar la racha más alta cuando sale del bucle.
-# Volvemos a hacer la comparación y dependiendo de la longitud enseñamos un mensaje u otro.
-
-
+# Ejercicio similar al de calculos_lluvias.py
+# Problema relacionados con la temperatura de una ciudad.
 
 def obtener_lista_temperaturas():
     lista_temperaturas =[]

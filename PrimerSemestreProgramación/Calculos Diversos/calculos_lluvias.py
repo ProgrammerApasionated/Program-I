@@ -1,13 +1,5 @@
-# def obtener_lluvias()                ->  Obtiene una lista con la cantidad de lluvia.
-
-# def lluvia_maxima(lista_lluvias)     ->  Obtiene el valor máximo de una lista.
-
-# def lluvia_minimo(lista_lluvias)     ->  Obtiene el valor mínimo de una lista.
-
-# def dias_sin_lluvia(lista_lluvias)   ->  Obtiene la cantidad de dias sin lluvia.
-
-# def racha_de_lluvias(lista_lluvias)  ->  Obtiene la cantidad máxima de rachas de lluvias.
-
+# Programa que hace calculos con un ejercicio inventado.
+# Ejercicio de calculos relacionados con la cantidad de lluvia de un sitio.
 
 def obtener_lluvias():
     lista_lluvias = []

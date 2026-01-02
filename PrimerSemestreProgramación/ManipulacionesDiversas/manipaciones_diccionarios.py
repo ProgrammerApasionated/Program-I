@@ -1,5 +1,6 @@
 # Ejercicio de práctica con diccionarios.
 # Buscamos que el usuario diga los valores que quiera introducir y el valor que está ligado a él.
+
 def conseguir_dict():
     mi_diccionario = {}
     clave = input ("Introduce la clave \n ")

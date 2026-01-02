@@ -1,3 +1,6 @@
+# Ejercicio progresivo de introducción_POO.py
+# Uso de distintas clases que participan entre ellas.
+
 class Asignaturas:
     def __init__(self,nombre,horario,profesor):
         self.nombre   = nombre

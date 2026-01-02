@@ -1,3 +1,6 @@
+# Ejercicio que simula un sistema de biblioteca real.
+# Problema introductorio a la POO.
+
 class Libro:
     def __init__(self,nombre,isbn,autor,estado,genero):
         self.nombre   = nombre

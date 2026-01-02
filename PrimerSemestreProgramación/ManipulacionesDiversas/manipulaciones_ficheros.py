@@ -3,7 +3,6 @@
 # Azul#Panadería#Valencia#3.5
 # Donde tenemos Nombre#TipoTienda#Localidad#Importe.
 
-
 class Establecimiento:
     def __init__(self, nombre, localidad):
         self.nombre = nombre

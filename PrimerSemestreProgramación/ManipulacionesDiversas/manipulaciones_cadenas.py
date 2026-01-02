@@ -1,25 +1,5 @@
-# encontrar_palíndromo()  ->      Determina si un programa es un palíndromo o no.
-
-# Inicializa una lista con la cantidad de palabras que son palíndromos, depura la cadena para no ser la vacía y evalúa si la cadena invertida es igual a la original.
-# Al comprobar que es o no es igual, devuelve la solución y pide otra cadena, cuando el usuario introduzca una cadena vacía el programa rompe el bucle y enseña toda la información final.
-
-# patron_concreto()       ->      Produce un patrón de carácteres concretos.
-
-# Inicializamos una lista con las cadenas con los patrones, luego enseñamos al usuario la forma que tiene el patrón y luego calculamos la cadena y la mostramos.
-# Añadimos a la lista el patrón hecho y luego con un bucle for conseguimos mostrar la cantidad de patrones conseguidos.
-
-
-# eliminar_espacios()     ->      Elimina los espacios de una frase
-
-# Inicializamos una lista con las cadenas sin los espacios vacíos, luego creamos e inicializamos una variable dentro del bucle while para que en cada interación cambie.
-# Carácter a carácter ponemos la solución en esta nueva variable y posteriormente la guardamos en la lista y mostramos las frases guardadas en la lista.
-
-
-# detectar_algo()         ->      Detecta un carácter en una frase
-
-# Inicializamos una lista con la cantidad de carácteres que tiene de un carácter dado por el usuario, buscamos el patrón mediante índices con un bucle for y aumentamos la cantidad.
-# Finalmente, depuramos que la frase dada para que no sea un conjunto vacío para luego repetir el bucle, y enseñamos una lista con cada interación y cantidad del patrón.
-
+# Ejercicios de cadenas.
+# Orientado a trabajar con este concepto.
 
 def encontrar_palindromo():
     lista_palindromos = []   # Inicializa una lista con la cantidad de palabras que son palíndromos.

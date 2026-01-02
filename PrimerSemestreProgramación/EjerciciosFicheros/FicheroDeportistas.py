@@ -1,5 +1,6 @@
 # Ejercicio orientado a leer los datos de Datos.txt
 # Datos con el siguiente formato -> Nombre [Actividad -> Valor] Temporada Nivel
+
 class Deportista:
     def __init__(self,nombre,actividad,temporada,nivel):
         self.nombre     = nombre

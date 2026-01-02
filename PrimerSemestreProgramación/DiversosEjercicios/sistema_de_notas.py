@@ -1,14 +1,5 @@
-# def obtener_datos()                ->    Obtener la lista con los datos.
-
-# def mostrar_info(lista)            ->    Enseñar toda la información de los estudiantes.
-
-# def media_alumno(lista_num)        ->    Con las notas del primer estudiante calcula su media.
-
-# def nota_maxima_minima(lista)      ->    Con la lista saca el valor máximo y mínimo.
-
-# def encontrar_alumno (lista_datos) ->    Busca el nombre de un estudiante y muestra sus datos.
-
-
+# Simple programa que simula un sistema de notas con estudiantes.
+# Ejercicio continuación de sistema_de_notas_simple.py
 
 def obtener_datos():
     lista_datos = []

@@ -110,6 +110,6 @@ def media_general(lista_estudiantes):
 
 
 # EJEMPLOS DE USO #
-#est = obtener_info("PruebaFicheros.txt")
-#enseñar_notas_por_alumno(est)
-#mejores_notas(est)
+est = obtener_info("PruebaFicheros.txt")
+enseñar_notas_por_alumno(est)
+mejores_notas(est)

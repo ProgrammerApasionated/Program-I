@@ -1,13 +1,4 @@
-# def obtener_notas ()                ->     Obtención de las notas de un usuario.
-
-# def obtener_media (lista_notas)     ->     Obtención de la media de las notas.
-
-# def racha_aprobados (lista_notas)   ->     Obtención de la racha de aprobados.
-
-# def tipo_estudiante(lista_notas)    ->     Dependiendo de la media y la racha determinamos el tipo de estudiante.
-
-# def enseñar_notas()                 ->     Con una lista con la asignatura y la nota enseñamos la información al usuario.
-
+# Ejercicio simple de un sistema de notas simple.
 
 def obtener_notas():
     notas = []

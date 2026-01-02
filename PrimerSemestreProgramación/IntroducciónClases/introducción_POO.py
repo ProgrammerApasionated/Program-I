@@ -1,3 +1,6 @@
+# Ejercicio progresivo de sistema_de_notas.py
+# Con lógica de programación orientada a objetos.
+
 class Estudiante:
 
     def __init__ (self,nombre,notas,genero):
